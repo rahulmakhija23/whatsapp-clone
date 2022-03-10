@@ -1,0 +1,65 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  flex: 0.35;
+}
+.sidebar__header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border-right: 1px solid lightgray;
+}
+.sidebar__headerRight {
+  /* this is for icons part */
+  /* understand this css */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 10vw;
+}
+.sidebar__headerRight > .MuiSvgIcon-root {
+  font-size: 24px !important;
+  margin-right: 2vw;
+}
+
+.sidebar__search {
+  /* this is the background of search text change background color to blue will notice */
+  display: flex;
+  align-items: center;
+  height: 39px;
+  padding: 10px;
+  background-color: #f6f6f6f6;
+}
+.sidebar__searchContainer {
+  /* this is  the placeholder text decoration */
+  display: flex;
+  align-items: center;
+  background-color: white;
+  width: 100%;
+  height: 35px;
+  border-radius: 20px;
+}
+.sidebar__searchContainer > .MuiSvgIcon-root {
+  /* this is the search icon inside the sidebar__search component */
+  color: gray;
+  padding: 10px;
+}
+
+.sidebar__searchContainer > input {
+  border: none;
+  margin-left: 10px;
+  outline-width: 0;
+  /* outline-width:0 helps o remove the the outline of input container hovered or selected  */
+}
+.sidebar__chats {
+  flex: 1;
+  background-color: white;
+  overflow-y: scroll;
+}
+.sidebar__addnewHeader {
+  background-color: white;
+  width: 91 0.5%;
+  /* padding: 10px; */
+  padding-left: 14px;
+  padding-bottom: 10px;
+}
